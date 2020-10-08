@@ -1,0 +1,25 @@
+{
+  "name": "goit-js-hw-10-food-service",
+  "version": "1.0.0",
+  "description": "HW 10",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gloomy699/goit-js-hw-10-food-service.git"
+  },
+  "author": "Yaroslav Vasylenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gloomy699/goit-js-hw-10-food-service/issues"
+  },
+  "homepage": "https://github.com/Gloomy699/goit-js-hw-10-food-service#readme"
+
+}
