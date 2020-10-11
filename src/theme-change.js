@@ -7,7 +7,7 @@ const toggle = document.querySelector('#theme-switch-toggle');
 const body = document.querySelector('#body');
 
 
- const addClassToSwitchTheme = () => {
+ const addClassToSwith = () => {
     if (toggle.checked === true) {
         themeToggle = body.classList.add(Theme.DARK);
         body.classList.remove(Theme.LIGHT);
@@ -19,7 +19,7 @@ const body = document.querySelector('#body');
     }
 }
 
-const saveCurrentThemeWhenRestartPage = () => {
+const currentTheme = () => {
     const themeStorage = localStorage.getItem('siteTheme');
     if (themeStorage) {
         if (themeStorage === 'true') {
@@ -28,6 +28,6 @@ const saveCurrentThemeWhenRestartPage = () => {
         }
     }
 }
-toggle.addEventListener('change', addClassToSwitchTheme);
-saveCurrentThemeWhenRestartPage();
+toggle.addEventListener('change', addClassToSwith);
+currentTheme();
 body.classList.add(Theme.LIGHT);
