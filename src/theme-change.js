@@ -21,13 +21,16 @@ const body = document.querySelector('#body');
 
 const currentTheme = () => {
     const themeStorage = localStorage.getItem('siteTheme');
-    if (themeStorage) {
+  
         if (themeStorage === 'true') {
             body.classList.add(Theme.DARK);
             toggle.checked = true;
         }
+        else {
+          body.classList.add(Theme.LIGHT);  
+
     }
-}
+    }
+
 toggle.addEventListener('change', addClassToSwith);
 currentTheme();
-body.classList.add(Theme.LIGHT);
